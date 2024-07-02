@@ -205,7 +205,7 @@ class RocmComputeCapability {
     return absl::c_count(kList, gfx_version()) != 0;
   }
 
-  bool navi21() const { return gfx_version() == "gfx1030"; }
+  bool navi21() const { return gfx_version() == "gfx1030" || gfx_version() == "gfx1031"; }
 
   bool navi31() const { return gfx_version() == "gfx1100"; }
 
@@ -251,7 +251,7 @@ class RocmComputeCapability {
       "gfx908",                       // MI100
       "gfx90a",                       // MI200
       "gfx940",  "gfx941", "gfx942",  // MI300
-      "gfx1030",                      // Navi21
+      "gfx1030", "gfx1031",           // Navi21
       "gfx1100"                       // Navi31
   };
 };

@@ -38,6 +38,7 @@ fi
 ROCM_PATH=$ROCM_INSTALL_DIR
 
 PYTHON_VERSION=`python3 -c "import sys;print(f'{sys.version_info.major}.{sys.version_info.minor}')"`
+PYTHON_VERSION="3.10"
 export TF_PYTHON_VERSION=$PYTHON_VERSION
 # Explicitly define resource constraints on bazel to avoid overload on rocm-ci
 if [[ -n $restriction ]]; then

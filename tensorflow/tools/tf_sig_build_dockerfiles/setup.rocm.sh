@@ -59,7 +59,7 @@ fi
 wget -qO - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -;
 echo "deb [arch=amd64 trusted=yes] http://apt.llvm.org/focal/ llvm-toolchain-focal-17 main" > /etc/apt/sources.list.d/llvm.list
 
-GPU_DEVICE_TARGETS=${GPU_DEVICE_TARGETS:-"gfx900 gfx906 gfx908 gfx90a gfx940 gfx941 gfx942 gfx1030 gfx1100"}
+GPU_DEVICE_TARGETS=${GPU_DEVICE_TARGETS:-"gfx900 gfx906 gfx908 gfx90a gfx940 gfx941 gfx942 gfx1030 gfx1031 gfx1100"}
 
 echo $ROCM_VERSION
 echo $ROCM_REPO
